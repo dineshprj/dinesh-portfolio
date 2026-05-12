@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import './App.css';
 
 // Import components
 import Navbar from './components/Navbar';
@@ -35,10 +34,10 @@ export default function App() {
   }, []);
 
   return (
-    <div className="portfolio-container">
+    <div className="max-w-[1000px] mx-auto px-6">
       <Navbar activeSection={activeSection} />
       <Hero />
-      <main className="main-content">
+      <main className="flex flex-col gap-20 pb-20">
         <Skills />
         <Projects />
         <Education />
